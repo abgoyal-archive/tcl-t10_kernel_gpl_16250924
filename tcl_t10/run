@@ -1,0 +1,12 @@
+#!/bin/bash
+
+	make T10_defconfig
+	make Image
+	mkdir -p out
+	cp -f arch/arm/boot/Image out/
+	echo "========================"
+	echo " "
+	echo "build product: out/Image"
+	echo " "
+	echo "finish!!!"
+
